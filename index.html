@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- TAIILWIND && CSS -->
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+  
+ 
+
+
+   
+    <title>Managment system</title>
+</head>
+<body class="bg-zinc-400	">
+    <div class="container">
+
+        <header >
+            <div class="text-center">
+                <h1 class="">CRUD</h1>
+                <p class="">Product Managment System</p>
+            </div>
+        </header> 
+
+        <main>
+
+            <div class="inputs text-center">
+
+                <input class="bg-zinc-700	 outline-none	border-0	rounded-xl	h-8	title-c bg-neutral-950	text-center inputs_outputs_p " type="text" id="title" placeholder="Title">
+
+                <div class="price flex justify-center flex-wrap gap-4	">
+                    <input class="bg-zinc-700	 outline-none	border-0	rounded-xl	h-8	 text-center" type="number" name="" id="price" placeholder="Price">
+                    <input class="bg-zinc-700	 outline-none	border-0	rounded-xl	h-8	text-center"  type="number" name="" id="taxes" placeholder="taxes">
+                    <input class="bg-zinc-700	 outline-none	border-0	rounded-xl	h-8	text-center"  type="number" name="" id="ads" placeholder="ads">
+                    <input class="bg-zinc-700	 outline-none	border-0	rounded-xl	h-8	text-center"  type="number" name="" id="discount" placeholder="discount">
+
+                    <small id="total">583</small>
+                </div>
+                <div class="flex flex-col gap-4 create_category_count">
+                    <input class="bg-zinc-700	 outline-none border-0 rounded-xl h-8 px-2 inputs_outputs_p" type="number" id="count" placeholder="count">
+                    <button class="bg-zinc-700	outline-none border-0 rounded-xl h-8  transition" type="submit" id="submit">Create</button>
+                    <input class="bg-zinc-700	 outline-none border-0 rounded-xl h-8 px-2 inputs_outputs_p" type="text" id="categorey" placeholder="categorey">
+                </div>
+            </div>
+            <div class="inputs text-center search-c" >
+
+                <input class="bg-zinc-700	 outline-none	border-0	rounded-xl	h-8	title-c bg-neutral-950	text-center inputs_outputs_p" type="Search" id="Search" placeholder="Search">
+
+                <div class=" flex justify-around flex-wrap	">
+                  
+                    <button class="bg-zinc-700	outline-none border-0 rounded-xl h-8  transition w-102" type="submit" id="Search_title">Create</button>
+                    <button class="bg-zinc-700	outline-none border-0 rounded-xl h-8  transition w-80" type="submit" id="Search_category">Create</button>
+
+                </div>
+
+                <div class="w-full p-4 grid-c">
+                    <!-- عناوين الأعمدة -->
+                    <div class="grid grid-cols-10 bg-gray-600	 text-white font-bold p-2 text-center">
+                        <div>ID</div>
+                        <div>TITLE</div>
+                        <div>PRICE</div>
+                        <div>TAXES</div>
+                        <div>ADS</div>
+                        <div>DISCOUNT</div>
+                        <div>TOTAL</div>
+                        <div>CATEGORY</div>
+                        <div>UPDATE</div>
+                        <div>DELETE</div>
+                    </div>
+                
+                    <!-- بيانات المنتجات -->
+                    <div class="grid grid-cols-10 bg-zinc-700 text-white text-center p-2 border-b border-gray-700 items-center">
+                        <div>1</div>
+                        <div>samsung</div>
+                        <div>2000</div>
+                        <div>100</div>
+                        <div>100</div>
+                        <div>100</div>
+                        <div>2100</div>
+                        <div>phone</div>
+                        <button class="bg-purple-900 text-white px-4 py-1 rounded-lg hover:bg-purple-700">update</button>
+                        <button class="bg-purple-900 text-white px-4 py-1 rounded-lg hover:bg-red-700">delete</button>
+                    </div>
+                
+
+                
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
